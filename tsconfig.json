@@ -17,10 +17,10 @@
     "outDir": "tmp",
     "noEmit": true,
     "paths": {
-      "~/*": ["./src/*", "./scripts/seed.js"]
+      "~/*": ["./src/*"]
     }
     
   },
   "files": ["./.eslintrc.cjs"],
-  "include": ["src", "./*.d.ts", "./*.config.ts"]
+  "include": ["src", "./*.d.ts", "./*.config.ts", "scripts/seed.js"]
 }
