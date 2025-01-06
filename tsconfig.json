@@ -17,8 +17,9 @@
     "outDir": "tmp",
     "noEmit": true,
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*", "./scripts/seed.js"]
     }
+    
   },
   "files": ["./.eslintrc.cjs"],
   "include": ["src", "./*.d.ts", "./*.config.ts"]
