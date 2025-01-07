@@ -7,7 +7,7 @@ import { LatestInvoices } from "~/components/ui/dashboard/latest-invoices";
 import { useFetchData } from "./layout";
 
 export default component$(() => {
-  const { revenue } = useFetchData().value;
+  const { revenue, latestInvoices } = useFetchData().value;
   return (
     <main>
       <h1 class="lusitana mb-4 text-xl md:text-2xl">Dashboard</h1>
@@ -23,7 +23,7 @@ export default component$(() => {
       </div>
       <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
         <RevenueChart revenue={revenue} /> 
-          {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
+         <LatestInvoices latestInvoices={latestInvoices} /> 
       </div>
     </main>
   );
